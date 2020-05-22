@@ -1,0 +1,55 @@
+{
+  "name": "@kmkzt/renovate-config",
+  "repository": "kmkzt/renovate-config",
+  "homepage": "https://github.com/kmkzt/renovate-config",
+  "bugs": "https://github.com/kmkzt/renovate-config/issues",
+  "version": "1.0.0",
+  "description": "A shareable Renovate config for kmkzt",
+  "files": [],
+  "keywords": [
+    "renovate"
+  ],
+  "scripts": {
+    "test": "renovate-config-validator"
+  },
+  "devDependencies": {
+    "renovate": "19.30.7"
+  },
+  "author": "kmkzt",
+  "license": "MIT",
+  "renovate-config": {
+    "default": {
+      "extends": [
+        "config:base"
+      ],
+      "labels": [
+        "renovate"
+      ],
+      "major": {
+        "groupName": "all major dependencies"
+      },
+      "minor": {
+        "groupName": "all minor dependencies"
+      },
+      "patch": {
+        "automerge": true,
+        "groupName": "all patch dependencies"
+      },
+      "npm": {
+        "packageRules": [
+          {
+            "groupName": "ESLint and Prettier",
+            "packageNames": [
+              "eslint",
+              "prettier"
+            ],
+            "packagePatterns": [
+              "^eslint-config-",
+              "^eslint-plugin-"
+            ]
+          }
+        ]
+      }
+    }
+  }
+}
