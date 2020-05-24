@@ -13,7 +13,7 @@
     "test": "renovate-config-validator"
   },
   "devDependencies": {
-    "renovate": "20.2.4"
+    "renovate": "20.2.5"
   },
   "author": "kmkzt",
   "license": "MIT",
