@@ -23,7 +23,8 @@
         "config:base"
       ],
       "labels": [
-        "renovate"
+        "renovate",
+        "dependencies"
       ],
       "major": {
         "groupName": "all major dependencies"
